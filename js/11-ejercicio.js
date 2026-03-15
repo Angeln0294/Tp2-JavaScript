@@ -1,9 +1,20 @@
 let nombre1 = prompt("Ingrese el primer nombre");
-let edad1 = parseInt(prompt("Ingrese la edad de " +  nombre1));
+while (!isNaN(nombre1)) {
+  nombre1 = prompt("Error. Ingrese un nombre válido (no números)");
+}
+let edad1 = parseInt(prompt("Ingrese la edad de " + nombre1));
+
 let nombre2 = prompt("Ingrese el segundo nombre ");
-let edad2 = parseInt(prompt("Ingrese la edad de " +   nombre2));
+while (!isNaN(nombre2)) {
+  nombre2 = prompt("Error. Ingrese un nombre válido (no números)");
+}
+let edad2 = parseInt(prompt("Ingrese la edad de " + nombre2));
+
 let nombre3 = prompt("Ingrese el tercer nombre ");
-let edad3 = parseInt(prompt("Ingrese la edad de " +   nombre3));
+while (!isNaN(nombre3)) {
+  nombre3 = prompt("Error. Ingrese un nombre válido (no números)");
+}
+let edad3 = parseInt(prompt("Ingrese la edad de " + nombre3));
 
 let mayorEdad = Math.max(edad1, edad2, edad3);
 
@@ -16,4 +27,4 @@ if (mayorEdad === edad1) {
   nombreMayor = nombre3;
 }
 
-alert("La persona mayor es: " + nombreMayor)
+document.writeln("La persona con mayor edad es: " + nombreMayor);
