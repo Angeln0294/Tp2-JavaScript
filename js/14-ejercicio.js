@@ -6,5 +6,5 @@ if(texto && isNaN(texto)){
     pantalla.innerHTML = `<p>Resultado</p>${resultado}`
     
 }else{
-    pantalla.innerHTML = "no ingraste texto"
+    pantalla.innerHTML = "No ingraste texto"
 }
